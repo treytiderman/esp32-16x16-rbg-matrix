@@ -5,13 +5,13 @@
 #include <WiFi.h>
 
 // Network credentials
-const char* ssid = "Trey-ATT";
-const char* password = "okayokay";
+const char* ssid = "----";
+const char* password = "----";
 IPAddress deviceIP; // IP Object
 
 // AP Network credentials
-const char* ap_ssid = "okay_ap_esp32";
-const char* ap_password = "okayokay9";
+const char* ap_ssid = "okayokayokay";
+const char* ap_password = "okayokayokay";
 
 // Connect to a WiFi network
 void connectToWiFi() {
