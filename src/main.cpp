@@ -5,9 +5,9 @@
 #include <WiFi.h>
 
 // Header files
-#include <wifiSetup.h>
-#include <webServer.h>
-// #include <ledMatrix.h>
+#include <wifiSetup.hpp>
+#include <webServer.hpp>
+// #include <ledMatrix.hpp>
 
 // Setup
 void setup() {

@@ -8,8 +8,8 @@
 #include <ESPAsyncWebServer.h>
 
 // Index.html
-#include <webPage.h>
-#include <ledMatrix.h>
+#include <webPage.hpp>
+#include <ledMatrix.hpp>
 
 // HTML Server
 AsyncWebServer webServer(80);

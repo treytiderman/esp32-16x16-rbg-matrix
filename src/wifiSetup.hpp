@@ -5,8 +5,8 @@
 #include <WiFi.h>
 
 // Network credentials
-const char* ssid = "----";
-const char* password = "----";
+const char* ssid = "s";
+const char* password = "p";
 IPAddress deviceIP; // IP Object
 
 // AP Network credentials
@@ -23,7 +23,7 @@ void connectToWiFi() {
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {
     delay(500);
-    WiFi.setHostname("Trey-ESP32");
+    WiFi.setHostname("Trey-ESP32-2");
     Serial.print(".");
   }
 
@@ -39,8 +39,8 @@ void createWiFi() {
 
   Serial.print("\n\nCreating WiFi...");
   WiFi.mode(WIFI_AP_STA);
-  WiFi.setHostname("Trey-ESP32");
-  WiFi.softAPsetHostname("Trey-ESP32");
+  WiFi.setHostname("Trey-ESP32-2");
+  WiFi.softAPsetHostname("Trey-ESP32-2");
   WiFi.softAP(ap_ssid, ap_password);
   Serial.print("\nCreated WiFi with IP: ");
   deviceIP = WiFi.softAPIP();
